@@ -10,7 +10,7 @@
 <body style="background-color: cornflowerblue;">
 
     <center>
-       <form method="get" action="/index1.html">
+       <form method="get" action="./index1.html">
           <center><h1 style="color: darkorange
           ;">Welcome TO PrepBytes</h1></center>
             <table border="1" cellpadding="10" cellspacing="0" >
@@ -18,40 +18,46 @@
                     <td colspan="2" style="background-color: brown;"><center><h1>Registretion form </h1></center></td>
                 </tr>
                 <tr>
-                    <td style="background-color: chartreuse;">Enter Name:</td>
+                    <td style="background-color: chartreuse;"><label for="name">Enter Name:</label></td>
                     <td style="background-color: aqua;"><input type="text" name="name" required></td>
                 </tr>
 
                 <tr>
-                    <td style="background-color: chartreuse;">Email Address:</td>
+                    <td style="background-color: chartreuse;"><label for="name">Email Address:</label></td>
                     <td style="background-color: aqua;"><input type="text" name="email" required></td>
                 </tr>
 
                 <tr>
-                    <td style="background-color: chartreuse;" >Enter Password:</td>
+                    <td style="background-color: chartreuse;" ><label for="password">Enter Password:</label></td>
                     <td style="background-color: aqua;"><input type="password" name="Password" required></td>
                 </tr>
                 
                 <tr>
                     <td style="background-color: chartreuse;">Select language:</td>
                     <td style="background-color: aqua;">
-                        <input type="radio" name="language" value="React">React
-                        <input type="radio" name="language" value="Angular">Angular
-                        <input type="radio" name="language" value="Vue">Vue
+                        <input type="radio" name="language" value="React" id="react" required>
+                        <label for="react">React</lable>
+                        <input type="radio" name="language" value="Angular" id="angular">
+                        <label for="angular">Angular</lable>
+                        <input type="radio" name="language" value="Vue" id="vua">
+                        <label for="vua">Vue</lable>
                     </td>
                 </tr>
                 
                 <tr>
-                    <td style="background-color: chartreuse;">Check out course:</td>
+                    <td style="background-color: chartreuse;">selecat course:</td>
                     <td style="background-color: aqua;">
-                        <input type="checkbox" name="course" value="React">MERN
-                        <input type="checkbox" name="course" value="Angular">MERN
-                        <input type="checkbox" name="course" value="Vue">MERN
+                        <input type="checkbox" name="course" id="course" value="MERN" required>
+                        <label for="course">MERN</label>
+                        <input type="checkbox" name="course" id="course1" value="MERN" required>
+                         <label for="course1">MERN</label>
+                        <input type="checkbox" name="course" id="course2" value="MERN" required>
+                         <label for="course2">MERN</label>
                     </td>
                 </tr>
                 
                 <tr>
-                    <td style="background-color: chartreuse;">Select field:</td>
+                    <td style="background-color: chartreuse;"><label for="field">Select field:</label></td>
                     <td style="background-color: aqua;">
                         <select name="field">
                                 <option value="backend">backend</option>
@@ -62,18 +68,18 @@
                 </tr>
                 
                 <tr>
-                    <td style="background-color: chartreuse;">Enter Text:</td>
+                    <td style="background-color: chartreuse;"><label for="text">Enter Text:</label></td>
                     <td style="background-color: aqua;"><textarea type="text" name="text"></textarea></td>
                 </tr>
 
                 <tr>
-                    <td style="background-color: chartreuse;">Phone Namber:</td>
+                    <td style="background-color: chartreuse;"><label for="phone">Phone Namber:</label></td>
                     <td style="background-color: aqua;"><input type="tel" name="phone" required></td>
                 </tr>
                  
                 <tr>
                     <td style="background-color: chartreuse;">Tables:</td>
-                    <td style="background-color: aqua;"><a href="/index2.html">Click Here</a></td>
+                    <td style="background-color: aqua;"><a href="./index2.html">Click Here</a></td>
                 </tr>
 
                 <tr>
@@ -90,5 +96,4 @@
     </center>
 </body>
 </html>
-
 
